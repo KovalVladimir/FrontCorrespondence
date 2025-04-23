@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Деловой чат</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>Деловой чат проекта "Горизонт"</h2>
+            <div class="header-controls">
+                <button>Уведомления</button>
+                <button>Поиск</button>
+                <button>Настройки</button>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="scroll-content">
+                <h3 style="margin-bottom: 15px; font-size: 16px;">Участники (21)</h3>
+                <ul class="user-list">
+                    <li class="online">Иван Петров <span class="user-status">(руководитель)</span></li>
+                    <li class="online">Анна Сидорова</li>
+                    <li class="online">Сергей Иванов</li>
+                    <li>Мария Кузнецова <span class="user-status">(в отпуске)</span></li>
+                    <li class="online">Алексей Смирнов</li>
+                    <li class="online">Елена Васильева</li>
+                    <li>Дмитрий Попов</li>
+                    <li class="online">Ольга Новикова</li>
+                    <li>Андрей Морозов</li>
+                    <li class="online">Наталья Волкова</li>
+                    <li class="online">Павел Лебедев</li>
+                    <li>Татьяна Козлова</span></li>
+                    <li class="online">Артём Семёнов</li>
+                    <li>Юлия Павлова</li>
+                    <li class="online">Власов Михаил</li>
+                    <li class="online">Яковлева Софья</li>
+                    <li class="online">Николаев Тимофей</li>
+                    <li>Пахомов Никита</li>
+                    <li>Бородина Виктория</li>
+                    <li class="online">Артём Семёнов</li>
+                    <li>Степанов Александр</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="messages">
+            <div class="scroll-content">
+                <div class="date-label">Сегодня, 20 апреля</div>
+                
+                <div class="message-system">
+                    Иван Петров создал групповой чат для обсуждения проекта "Горизонт"
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Иван Петров</div>
+                    <div class="message-text">Доброе утро, команда! Напоминаю, что сегодня в 14:00 у нас совещание по текущему статусу проекта. Пожалуйста, подготовьте свои отчёты по выполненным задачам.</div>
+                    <div class="message-time">09:15</div>
+                </div>
+                
+                <div class="message own">
+                    <div class="message-sender">Вы</div>
+                    <div class="message-text">Доброе утро! Мой отчёт готов, прикрепил его к письму, которое разослал вчера вечером. Основные моменты: завершена интеграция с платежной системой, осталось протестировать несколько крайних случаев.</div>
+                    <div class="message-time">09:18</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Анна Сидорова</div>
+                    <div class="message-text">У меня тоже всё готово. Дизайн-макеты для нового интерфейса утверждены, передала их в разработку. Осталось дождаться реализации, чтобы провести пользовательское тестирование.</div>
+                    <div class="message-time">09:20</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Сергей Иванов</div>
+                    <div class="message-text">Коллеги, у меня вопрос по API документации. Кто может помочь разобраться с разделом авторизации? Вроде всё по инструкции делаю, но получаю 403 ошибку.</div>
+                    <div class="message-time">09:25</div>
+                </div>
+                
+                <div class="message own">
+                    <div class="message-sender">Вы</div>
+                    <div class="message-text">Сергей, я сталкивался с подобным. Нужно проверить заголовки запроса, там должен быть не только API-key, но и специальный токен, который генерируется отдельно. Могу показать после совещания.</div>
+                    <div class="message-time">09:27</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Сергей Иванов</div>
+                    <div class="message-text">Спасибо! Буду признателен за помощь.</div>
+                    <div class="message-time">09:28</div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="message">
+                    <div class="message-sender">Алексей Смирнов</div>
+                    <div class="message-text">Коллеги, напоминаю, что завтра крайний срок подачи заявок на конференцию DevConf. Если кто-то хочет принять участие, сегодня нужно заполнить форму.</div>
+                    <div class="message-time">10:45</div>
+                </div>
+                
+                <div class="message own">
+                    <div class="message-sender">Вы</div>
+                    <div class="message-text">Я планирую подать заявку с докладом про наш опыт интеграции микросервисов. Кто-то ещё собирается участвовать?</div>
+                    <div class="message-time">10:48</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Елена Васильева</div>
+                    <div class="message-text">Я подам заявку на воркшоп по тестированию. Алексей, спасибо за напоминание!</div>
+                    <div class="message-time">10:50</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Ольга Новикова</div>
+                    <div class="message-text">Подскажите, пожалуйста, где можно найти шаблон заявки? И нужно ли согласование с руководителем?</div>
+                    <div class="message-time">10:52</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Иван Петров</div>
+                    <div class="message-text">Ольга, шаблон в папке "Общие документы" на корпоративном диске. Согласование со мной обязательно, присылайте заполненные заявки до 18:00.</div>
+                    <div class="message-time">10:55</div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="message-system">
+                    Иван Петров изменил название чата на "Проект Горизонт - Основной чат"
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Павел Лебедев</div>
+                    <div class="message-text">Коллеги, только что получил письмо от заказчика с несколькими правками по ТЗ. Основные изменения касаются логики работы с пользовательскими ролями. Разошлю подробности после совещания.</div>
+                    <div class="message-time">11:30</div>
+                </div>
+                
+                <div class="message own">
+                    <div class="message-sender">Вы</div>
+                    <div class="message-text">Павел, эти изменения критичны для текущего спринта? Нужно ли пересматривать приоритеты задач?</div>
+                    <div class="message-time">11:32</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Павел Лебедев</div>
+                    <div class="message-text">Да, к сожалению, это обязательно для релиза. Но объем изменений не большой, думаю, справимся без переноса сроков.</div>
+                    <div class="message-time">11:35</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Наталья Волкова</div>
+                    <div class="message-text">Я подготовлю сравнительный анализ текущего и нового ТЗ, чтобы было понятно, какие именно модули затронуты.</div>
+                    <div class="message-time">11:37</div>
+                </div>
+                
+                <div class="message own">
+                    <div class="message-sender">Вы</div>
+                    <div class="message-text">Отлично, Наталья! Это очень поможет. Предлагаю обсудить детали на совещании в 14:00.</div>
+                    <div class="message-time">11:38</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Артём Семёнов</div>
+                    <div class="message-text">Кстати, по поводу совещания - мы остаёмся в переговорной 302? Или переносим в другое место?</div>
+                    <div class="message-time">11:40</div>
+                </div>
+                
+                <div class="message">
+                    <div class="message-sender">Иван Петров</div>
+                    <div class="message-text">Переносим в 415, там больше места и лучше оборудование для демонстрации.</div>
+                    <div class="message-time">11:42</div>
+                </div>
+                
+                <div class="message-system">
+                    Иван Петров закрепил сообщение: "Совещание сегодня в 14:00 в переговорной 415"
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <textarea placeholder="Написать сообщение..."></textarea>
+            <div class="typing-indicator">Анна Сидорова печатает...</div>
+        </div>
+    </div>
+</body>
+</html>
